@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Gotu', sans-serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Lora', serif;
+}
+
+
+/* top head Student Marks Recorder */
+
+.topHead {
+    background-color: rgb(126, 226, 168);
+    background-image: url(resources/bg2.jpg);
+    height: 48px;
+    padding-top: 15px;
+}
+
+.topHead>h5 {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+
+/* div box contains all the input box and submit button */
+
+.topHead+div {
+    height: 300px;
+    background-color: violet;
+    margin-top: 15px;
+    background-image: url(resources/bg5.jpg);
+}
+
+.containAllinputs>input {
+    padding: 10px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.containAllinputs>select {
+    padding: 10px;
+}
+
+.containAllinputs>button {
+    padding: 10px;
+    width: 193px;
+}
