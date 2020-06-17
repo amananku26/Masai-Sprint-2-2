@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(-225deg, rgb(134, 248, 163) 0%, rgb(247, 93, 88) 51%, rgb(237, 113, 253) 50%);
+    background-image: linear-gradient(-225deg, rgb(134, 248, 163) 0%, rgb(247, 93, 88) 51%, rgb(237, 113, 253) 100%);
     font-family: 'Gotu', sans-serif;
     font-family: 'Itim', cursive;
     font-family: 'Lora', serif;
@@ -15,15 +15,16 @@ body {
 
 .topHead {
     background-color: rgb(126, 226, 168);
-    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, rgb(237, 113, 253) 85%);
     height: 48px;
     padding-top: 15px;
+    border-bottom: 2px solid cyan;
 }
 
 .topHead>h5 {
     font-size: 28px;
     text-align: center;
-    color: white;
+    color: whitesmoke;
 }
 
 
@@ -31,9 +32,12 @@ body {
 
 .topHead+div {
     height: 300px;
-    background-color: violet;
     margin-top: 15px;
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+.containAllinputs {
+    border-bottom: 2px solid cyan;
 }
 
 .containAllinputs>input:nth-child(1) {
@@ -59,6 +63,14 @@ body {
     border: none;
 }
 
+.containAllinputs>h6 {
+    padding: 10px;
+    width: 193px;
+    color: white;
+    margin-left: 35%;
+    font-size: 20px;
+}
+
 .containAllinputs>select {
     padding: 10px;
     border-radius: 5px;
@@ -69,17 +81,20 @@ body {
 .containAllinputs>button {
     padding: 10px;
     width: 193px;
-    background-image: linear-gradient(-225deg, rgb(245, 112, 130) 0%, #3584A7 51%, rgb(252, 249, 85) 100%);
+    background-image: linear-gradient(-225deg, #EF5350 0%, #EF5350 51%, #EF5350 100%);
     color: white;
     font-size: 15px;
     border: none;
     border-radius: 8px;
+    font-weight: 5000;
+    margin-left: 35%;
+    margin-top: 5px;
+    width: 380px;
 }
 
-.containAllinputs>h6 {
-    padding: 10px;
-    width: 193px;
-    color: white;
-    margin-left: 35%;
-    font-size: 20px;
+button+p {
+    color: rgb(33, 42, 54);
+    margin-left: 69%;
+    font-size: 13px;
+    padding-bottom: 25px;
 }
