@@ -14,9 +14,10 @@
     <div class="topHead">
         <h5>Student Marks Recorder</h5>
     </div>
-    <div class="containAllinputs">
-        <input type="text" name="student name" placeholder="Enter Student Name" required>
-        <select name="" id="" required>
+    <form action="">
+        <div class="containAllinputs">
+            <input type="text" name="student name" placeholder="Enter Student Name" required>
+            <select name="" id="" required>
             <option value="">CLASS-1</option>
             <option value="">CLASS-2</option>
             <option value="">CLASS-3</option>
@@ -27,26 +28,27 @@
             <option value="">CLASS-8</option>
             <option value="">CLASS-9</option>
         </select>
-        <select name="" id="">
+            <select name="" id="">
             <option value="">Section-A</option>
             <option value="">Section-B</option>
             <option value="">Section-C</option>
             <option value="">Section-D</option>
             <option value="">Section-E</option>
         </select>
-        <br>
-        <h6>&dArr;Enter Marks Here</h6>
-        <input type="number" name="" placeholder="Math">
-        <input type="number" name="" placeholder="Biology">
-        <br>
-        <input type="number" name="" placeholder="Chemistry">
-        <input type="number" name="" placeholder="Physics">
-        <br>
-        <input type="number" name="" placeholder="English">
+            <br>
+            <h6>&dArr;Enter Marks Here</h6>
+            <input type="number" name="" placeholder="Math" min="1" max="100" required>
+            <input type="number" name="" placeholder="Biology" min="1" max="100" required>
+            <br>
+            <input type="number" name="" placeholder="Chemistry" min="1" max="100" required>
+            <input type="number" name="" placeholder="Physics" min="1" max="100" required>
+            <br>
+            <input type="number" name="" placeholder="English" min="1" max="100" required>
 
-        <br>
-        <button>Submit</button>
-        <p>* After Submiting all the Details , Pass or Fail Will be Shown <br> * with average marks and total marks obtained by the student</p>
+            <br>
+            <button type="submit">Submit</button>
+    </form>
+    <p>* After Submiting all the Details , Pass or Fail Will be Shown <br> * with average marks and total marks obtained by the student</p>
 
     </div>
 </body>
