@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient(-225deg, rgb(134, 248, 163) 0%, rgb(247, 93, 88) 51%, rgb(237, 113, 253) 100%);
+    background-image: linear-gradient(-225deg, rgb(134, 248, 163) 0%, rgb(247, 93, 88) 51%, rgb(248, 195, 255) 100%);
     font-family: 'Gotu', sans-serif;
     font-family: 'Itim', cursive;
     font-family: 'Lora', serif;
@@ -15,7 +15,7 @@ body {
 
 .topHead {
     background-color: rgb(126, 226, 168);
-    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, rgb(237, 113, 253) 85%);
+    background-image: linear-gradient(-225deg, rgb(255, 237, 158) 0%, #3584A7 51%, rgb(255, 237, 158) 85%);
     height: 48px;
     padding-top: 15px;
     border-bottom: 2px solid cyan;
@@ -30,7 +30,7 @@ body {
 
 /* div box contains all the input box and submit button */
 
-form>div {
+.div>div {
     height: 300px;
     margin-top: 15px;
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
@@ -98,4 +98,19 @@ button+p {
     margin-left: 69%;
     font-size: 13px;
     padding-bottom: 25px;
+}
+
+.grid-box1 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+.grid-box1>div {
+    border: 2px solid rgb(85, 78, 90);
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 4px;
 }

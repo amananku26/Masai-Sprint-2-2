@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marks Recorder Sprint-2-2</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js" type="text/javascript"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
 </head>
@@ -14,41 +15,93 @@
     <div class="topHead">
         <h5>Student Marks Recorder</h5>
     </div>
-    <form action="">
+    <div class="div">
         <div class="containAllinputs">
-            <input type="text" name="student name" placeholder="Enter Student Name" required>
-            <select name="" id="" required>
-            <option value="">CLASS-1</option>
-            <option value="">CLASS-2</option>
-            <option value="">CLASS-3</option>
-            <option value="">CLASS-4</option>
-            <option value="">CLASS-5</option>
-            <option value="">CLASS-6</option>
-            <option value="">CLASS-7</option>
-            <option value="">CLASS-8</option>
-            <option value="">CLASS-9</option>
-        </select>
-            <select name="" id="">
-            <option value="">Section-A</option>
-            <option value="">Section-B</option>
-            <option value="">Section-C</option>
-            <option value="">Section-D</option>
-            <option value="">Section-E</option>
-        </select>
+
+            <!-- NAME INPUT  -->
+            <input type="text" name="student-name" id="name" placeholder="Enter Student Name" required>
+
+            <!-- CLASS SELECT -->
+            <select name="class" id="class" required>
+                <option value="CLASS-1">CLASS-1</option>
+                <option value="CLASS-2">CLASS-2</option>
+                <option value="CLASS-3">CLASS-3</option>
+                <option value="CLASS-4">CLASS-4</option>
+                <option value="CLASS-5">CLASS-5</option>
+                <option value="CLASS-6">CLASS-6</option>
+                <option value="CLASS-7">CLASS-7</option>
+                <option value="CLASS-8">CLASS-8</option>
+                <option value="CLASS-9">CLASS-9</option>
+            </select>
+
+            <!-- SECTION SLECT -->
+            <select name="section" id="section" required>
+                <option value="Section-A">Section-A</option>
+                <option value="Section-B">Section-B</option>
+                <option value="Section-C">Section-C</option>
+                <option value="Section-D">Section-D</option>
+                <option value="Section-E">Section-E</option>
+            </select>
             <br>
             <h6>&dArr;Enter Marks Here</h6>
-            <input type="number" name="" placeholder="Math" min="1" max="100" required>
-            <input type="number" name="" placeholder="Biology" min="1" max="100" required>
+            <!-- INPUT MATH MARKS -->
+            <input type="number" name="Math" id="math" placeholder="Math" min="1" max="100" required>
+            <!-- INPUT BIOLOGY MARKS -->
+            <input type="number" name="Biology" id="biology" placeholder="Biology" min="1" max="100" required>
             <br>
-            <input type="number" name="" placeholder="Chemistry" min="1" max="100" required>
-            <input type="number" name="" placeholder="Physics" min="1" max="100" required>
+            <!-- INPUT CHEMISTRY MARKS -->
+            <input type="number" name="Chemistry" id="chemistry" placeholder="Chemistry" min="1" max="100" required>
+            <!-- INPUT PHYSICS MARKS -->
+            <input type="number" name="Physics" id="physics" placeholder="Physics" min="1" max="100" required>
             <br>
-            <input type="number" name="" placeholder="English" min="1" max="100" required>
+            <!-- INPUT ENGLISH MARKS -->
+            <input type="number" name="English" id="english" placeholder="English" min="1" max="100" required>
 
             <br>
-            <button type="submit">Submit</button>
-    </form>
-    <p>* After Submiting all the Details , Pass or Fail Will be Shown <br> * with average marks and total marks obtained by the student</p>
+            <!-- SUBMIT BUTTOON -->
+            <button type="submit" onclick="RecieveData()">Submit</button>
+        </div>
+
+        <!-- NOTE -->
+        <p>* After Submiting all the Details , Grade Will be Shown <br> * with total marks obtained by the student</p>
+
+    </div>
+    <div class="grid-box1 fl-left">
+        <div>NAME</div>
+        <div>CLASS</div>
+        <div>SECTION</div>
+        <div>MATH</div>
+        <div>BIO.</div>
+        <div>CHEM.</div>
+        <div>PHY.</div>
+        <div>ENG.</div>
+        <div>Total</div>
+        <div>%</div>
+        <div>GRADE</div>
+
+        <!-- showing desired values -->
+        <div class="nameShow" id="nameShow">
+        </div>
+        <div class="classShow" id="classShow">
+        </div>
+        <div class="sectionShow" id="sectionShow">
+        </div>
+        <div class="mathShow" id="mathShow">
+        </div>
+        <div class="bioShow" id="bioShow">
+        </div>
+        <div class="chemShow" id="chemShow">
+        </div>
+        <div class="phyShow" id="phyShow">
+        </div>
+        <div class="engShow" id="engShow">
+        </div>
+        <div class="totalShow" id="totalShow">
+        </div>
+        <div class="percntShow" id="percntShow">
+        </div>
+        <div class="gradeShow" id="gradeShow">
+        </div>
 
     </div>
 </body>
